@@ -12,11 +12,14 @@ int main()
 
 	std::cout << "Hello world! \n";
 
-	std::cout << "---Task 2---" << std::endl;
-	int x = 3;
-	int y = 4;
-	int result = x + y;
-	std::cout << "x + y = " << result << std::endl;
+    std::cout << "---Task 2 and 3---" << std::endl;
+
+    int z, y;
+    std::cout << "z = "; std::cin >> z;
+    std::cout << "y = "; std::cin >> y;
+    int result = z + y;
+    std::cout << "result = " << result << std::endl;
+
 
 }
 
