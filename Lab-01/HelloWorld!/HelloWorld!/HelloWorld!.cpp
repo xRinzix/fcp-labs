@@ -8,7 +8,10 @@
 
 int main()
 {
-	return 0;
+	std::cout << "---Task 1---" << std::endl;
+
+	std::cout << "Hello world! \n";
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
