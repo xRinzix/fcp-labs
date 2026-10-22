@@ -28,6 +28,26 @@ int main()
     std::cin >> heaterState;
     std::cout << (heaterState ? "It's hot!" : "It's cold!") << std::endl;
 
+    std::cout << "---Task 5---" << std::endl;
+
+    double a = 0, b = 0;
+    std::cout << "a = "; std::cin >> a;
+    std::cout << "b = "; std::cin >> b;
+
+    if (a == 0 and b == 0)
+    {
+        std::cout << "Any x is the solution" << std::endl;
+    }
+    else if (a == 0)
+    {
+        std::cout << "Something is wrong..." << std::endl;
+    }
+    else
+    {
+        double x = -b / a;
+        std::cout << "x = " << x << std::endl;
+    }
+
 
 }
 
