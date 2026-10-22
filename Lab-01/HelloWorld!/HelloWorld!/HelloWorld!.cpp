@@ -81,6 +81,51 @@ int main()
         std::cout << "X = " << X << std::endl;
         std::cout << "Y = " << Y << std::endl;
     }
+    std::cout << "---Task 7---" << std::endl;
+
+    double at7, bt7, ct7, xt7; // a task 7
+    double xt7r1, xt7r2; // x task 7 root 1
+    std::cout << "a = "; std::cin >> at7;
+    std::cout << "b = "; std::cin >> bt7;
+    std::cout << "c = "; std::cin >> ct7;
+    if (at7 == 0)
+    {
+        std::cout << "Now it's a linear equation, but I can solve it" << std::endl;
+        if (bt7 == 0 and ct7 == 0)
+        {
+            std::cout << "Any x is the solution" << std::endl;
+        }
+        else if (bt7 == 0)
+        {
+            std::cout << "Something is wrong..." << std::endl;
+        }
+        else
+        {
+            double xt7 = -ct7 / bt7;
+            std::cout << "x = " << xt7 << std::endl;
+        }
+    }
+    else
+    {
+        double dis = bt7 * bt7 - 4 * at7 * ct7;
+        if (dis > 0)
+        {
+            xt7r1 = (-bt7 + sqrt(dis)) / (2 * at7);
+            xt7r2 = (-bt7 - sqrt(dis)) / (2 * at7);
+            std::cout << "x = " << xt7r1 << std::endl;
+            std::cout << "x = " << xt7r2 << std::endl;
+
+        }
+        else if (dis < 0)
+        {
+            std::cout << "Sorry, the answer is a complex number, I can't solve it :(" << std::endl;
+        }
+        else
+        {
+            xt7 = -bt7 / (2 * at7);
+            std::cout << "x = " << xt7 << std::endl;
+        }
+    }
 
 
 }
