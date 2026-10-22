@@ -20,6 +20,14 @@ int main()
     int result = z + y;
     std::cout << "result = " << result << std::endl;
 
+    std::cout << "---Task 4---" << std::endl;
+
+    bool heaterState;
+    std::string message;
+    std::cout << "Type 1 to switch the heater on \n" << "Type 0 to switch the heater off" << std::endl;
+    std::cin >> heaterState;
+    std::cout << (heaterState ? "It's hot!" : "It's cold!") << std::endl;
+
 
 }
 
