@@ -12,6 +12,12 @@ int main()
 
 	std::cout << "Hello world! \n";
 
+	std::cout << "---Task 2---" << std::endl;
+	int x = 3;
+	int y = 4;
+	int result = x + y;
+	std::cout << "x + y = " << result << std::endl;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
