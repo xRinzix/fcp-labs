@@ -48,6 +48,40 @@ int main()
         std::cout << "x = " << x << std::endl;
     }
 
+    std::cout << "---Task 6---" << std::endl;
+
+    double A1, B1, C1;
+    double A2, B2, C2;
+    std::cout << "A1 = "; std::cin >> A1;
+    std::cout << "B1 = "; std::cin >> B1;
+    std::cout << "C1 = "; std::cin >> C1;
+    std::cout << "A2 = "; std::cin >> A2;
+    std::cout << "B2 = "; std::cin >> B2;
+    std::cout << "C2 = "; std::cin >> C2;
+    double X, Y;
+    double det = A1 * B2 - B1 * A2;
+    double detX = B2 * C1 - B1 * C2;
+    double detY = A1 * C2 - A2 * C1;
+    if (det == 0 and detY == 0 and detX == 0)
+    {
+        std::cout << "An infinity number of solutions" << std::endl;
+    }
+    else if (det == 0 and detY == 0 or detX == 0)
+    {
+        std::cout << "No solutions" << std::endl;
+    }
+    else if (det == 0 and detY != 0 or detX != 0)
+    {
+        std::cout << "No solutions" << std::endl;
+    }
+    else
+    {
+        X = detX / det;
+        Y = detY / det;
+        std::cout << "X = " << X << std::endl;
+        std::cout << "Y = " << Y << std::endl;
+    }
+
 
 }
 
